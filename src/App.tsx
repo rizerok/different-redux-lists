@@ -11,8 +11,8 @@ import RtkQueryList from './pages/rtk-query-list';
 import CustomReduxItem from './pages/custom-redux-list/item';
 
 const routerProps: BrowserRouterProps = {};
-if (process.env.PUBLIC_URL && process.env.NODE_ENV === 'production') {
-  routerProps.basename = process.env.PUBLIC_URL;
+if (process.env.REACT_APP_ROUTER_BASE && process.env.NODE_ENV === 'production') {
+  routerProps.basename = process.env.REACT_APP_ROUTER_BASE;
 }
 
 function App() {
